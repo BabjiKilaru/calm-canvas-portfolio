@@ -7,26 +7,32 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  // Primary skills - large and bold
-  { name: 'Java', tier: 'primary', x: 12, y: 12, animationDuration: 6 },
-  { name: 'Spring Boot', tier: 'primary', x: 20, y: 26, animationDuration: 7 },
-  { name: 'Microservices', tier: 'primary', x: 8, y: 42, animationDuration: 5 },
-  { name: 'React', tier: 'primary', x: 15, y: 56, animationDuration: 6.5 },
-  { name: 'AWS', tier: 'primary', x: 70, y: 10, animationDuration: 5.5 },
+  // Primary skills - large and bold, closest to portrait
+  { name: 'Java', tier: 'primary', x: 10, y: 10, animationDuration: 6 },
+  { name: 'Spring Boot', tier: 'primary', x: 18, y: 28, animationDuration: 7 },
+  { name: 'Microservices', tier: 'primary', x: 6, y: 45, animationDuration: 5 },
+  { name: 'React.js', tier: 'primary', x: 14, y: 62, animationDuration: 6.5 },
+  { name: 'AWS', tier: 'primary', x: 72, y: 12, animationDuration: 5.5 },
+  { name: 'Kubernetes', tier: 'primary', x: 68, y: 30, animationDuration: 6 },
   
-  // Secondary skills - medium
-  { name: 'Node.js', tier: 'secondary', x: 72, y: 35, animationDuration: 6 },
-  { name: 'REST APIs', tier: 'secondary', x: 68, y: 48, animationDuration: 7 },
-  { name: 'SQL', tier: 'secondary', x: 14, y: 70, animationDuration: 5.5 },
-  { name: 'Docker', tier: 'secondary', x: 75, y: 58, animationDuration: 6.5 },
-  { name: 'Kubernetes', tier: 'secondary', x: 10, y: 80, animationDuration: 5 },
+  // Secondary skills - medium, slightly farther
+  { name: 'Node.js', tier: 'secondary', x: 75, y: 48, animationDuration: 6 },
+  { name: 'FastAPI', tier: 'secondary', x: 8, y: 78, animationDuration: 7 },
+  { name: 'REST APIs', tier: 'secondary', x: 70, y: 62, animationDuration: 5.5 },
+  { name: 'Docker', tier: 'secondary', x: 78, y: 75, animationDuration: 6.5 },
+  { name: 'PostgreSQL', tier: 'secondary', x: 20, y: 82, animationDuration: 5 },
+  { name: 'MongoDB', tier: 'secondary', x: 65, y: 85, animationDuration: 6 },
+  { name: 'Angular', tier: 'secondary', x: 5, y: 92, animationDuration: 7 },
   
-  // Tertiary skills - small and light
-  { name: 'Git', tier: 'tertiary', x: 22, y: 85, animationDuration: 6 },
-  { name: 'Jenkins', tier: 'tertiary', x: 16, y: 92, animationDuration: 7 },
-  { name: 'Terraform', tier: 'tertiary', x: 72, y: 72, animationDuration: 5.5 },
-  { name: 'Grafana', tier: 'tertiary', x: 78, y: 82, animationDuration: 6 },
-  { name: 'Postman', tier: 'tertiary', x: 65, y: 88, animationDuration: 5 },
+  // Tertiary skills - small and light, drift in background
+  { name: 'Git', tier: 'tertiary', x: 25, y: 5, animationDuration: 6 },
+  { name: 'Jenkins', tier: 'tertiary', x: 85, y: 8, animationDuration: 7 },
+  { name: 'Terraform', tier: 'tertiary', x: 88, y: 38, animationDuration: 5.5 },
+  { name: 'Prometheus', tier: 'tertiary', x: 2, y: 22, animationDuration: 6 },
+  { name: 'Grafana', tier: 'tertiary', x: 90, y: 58, animationDuration: 5 },
+  { name: 'Postman', tier: 'tertiary', x: 35, y: 92, animationDuration: 6.5 },
+  { name: 'Swagger', tier: 'tertiary', x: 85, y: 88, animationDuration: 5.5 },
+  { name: 'GitHub Actions', tier: 'tertiary', x: 50, y: 95, animationDuration: 6 },
 ];
 
 const FloatingSkills = ({ isVisible }: { isVisible: boolean }) => {
