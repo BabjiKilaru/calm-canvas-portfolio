@@ -1,6 +1,6 @@
 # Portfolio
 
-Live site: [https://babjikilaru.com](https://babjikilaru.github.io/calm-canvas-portfolio/)
+Live site: https://babjikilaru.github.io/calm-canvas-portfolio/
 
 A focused portfolio for Babji Kilaru that highlights backend, cloud, and React work with motion-aware UI patterns, resumable navigation, and accessible forms.
 
