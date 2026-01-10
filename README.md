@@ -1,4 +1,4 @@
-# Calm Canvas Portfolio
+# Portfolio
 
 Live site: [https://babjikilaru.com](https://babjikilaru.github.io/calm-canvas-portfolio/)
 
