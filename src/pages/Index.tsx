@@ -1,29 +1,42 @@
+import { useState } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
+import SkillsSection from '@/components/SkillsSection';
+import WorkExperienceSection from '@/components/WorkExperienceSection';
+import EducationSection from '@/components/EducationSection';
 import {
   AboutSection,
-  CertificationsSection,
   ContactSection,
-  EducationSection,
-  ExperienceSection,
   ProjectsSection,
   ResumeSection,
-  SkillsSection,
 } from '@/components/Sections';
+import HangingLamp from '@/components/HangingLamp';
+import SocialLinks from '@/components/SocialLinks';
+import SectionDivider from '@/components/SectionDivider';
 
 const Index = () => {
+  const [socialRect, setSocialRect] = useState<DOMRect | null>(null);
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background md:pl-20 lg:pl-24">
+      <HangingLamp anchorRect={socialRect} />
       <Header />
       <main id="main-content" role="main" tabIndex={-1}>
+        <SocialLinks onContainerMeasured={setSocialRect} />
         <HeroSection />
+        <SectionDivider />
         <AboutSection />
+        <SectionDivider />
         <SkillsSection />
-        <ExperienceSection />
+        <SectionDivider />
+        <WorkExperienceSection />
+        <SectionDivider />
         <EducationSection />
-        <CertificationsSection />
+        <SectionDivider />
         <ProjectsSection />
+        <SectionDivider />
         <ResumeSection />
+        <SectionDivider />
         <ContactSection />
       </main>
       <footer role="contentinfo" className="sr-only">

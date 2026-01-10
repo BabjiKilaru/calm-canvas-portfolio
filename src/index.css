@@ -133,6 +133,10 @@
            transition-all duration-200 hover:scale-105;
   }
 
+  .social-icon-fixed {
+    @apply w-12 h-12 backdrop-blur-sm bg-background/70 shadow-sm;
+  }
+
   .skill-float {
     @apply absolute select-none pointer-events-none;
     animation: float 6s ease-in-out infinite;
@@ -341,4 +345,63 @@
 .animate-skill-fade {
   animation: skillFadeIn 0.5s ease-out forwards;
   opacity: 0;
+}
+
+@keyframes lamp-swing {
+  0% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(2px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(-1deg); }
+}
+
+@keyframes lamp-glow {
+  0% { opacity: 0.78; transform: scaleY(1); }
+  100% { opacity: 0.9; transform: scaleY(1.02); }
+}
+
+@keyframes string-flow {
+  0% { stroke-dashoffset: 0; }
+  50% { stroke-dashoffset: -80; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes mouseScroll {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(8px); opacity: 0.6; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.mouse-scroll {
+  animation: mouseScroll 1.6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.animate-pulse-slower {
+  animation: pulse 3.2s ease-in-out infinite;
+}
+
+@layer utilities {
+  .shadow-skill {
+    box-shadow:
+      0 18px 44px -28px rgba(0, 0, 0, 0.9),
+      0 8px 20px -14px rgba(0, 0, 0, 0.35);
+  }
+
+  .animate-skill-grid {
+    animation: skill-grid-fade 240ms ease;
+  }
+}
+
+@keyframes skill-grid-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
